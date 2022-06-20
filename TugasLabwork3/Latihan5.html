@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form Pendaftaran
+        </title>
+        <style>
+            h1
+            {
+                border-bottom: 2px solid black;
+            }
+            h2
+            {
+                content: ' ';
+                display: inline;
+                border: 2px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <center>
+        <h1>PERPUSTAKAAN UNS</h1>
+        <br>
+        </center>
+        <br>
+        <h2>Formulir Pendaftaran User</h2>
+        <br><br><br>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        NIM / NIP
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <input type="text" class="NIM" placeholder="NIM / NIP" required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nama Lengkap
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <input type="text" class="name" placeholder="Nama Lengkap" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Jenis Kelamin
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <input type="radio" id="pria" name="jeniskelamin"><label for="pria">Pria</label>
+                        <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">Wanita</label>
+                        <input type="radio" id="lainnya" name="jeniskelamin"><label for="lainnya">Lainnya</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Program
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <select name="program" required="required">
+                            <option value>==Pilih Program== </option>
+                            <option value="1">DIII</option>
+                            <option value="2">DIV</option>
+                            <option value="3">S1 Reguler</option>
+                            <option value="4">S1 Ekstensi</option>
+                            <option value="5">S2</option>
+                            <option value="6">S3</option>
+                            <option value="7">Dosen</option>
+                            <option value="8">Karyawan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fakultas
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <select name="fakultas" required="required">
+                            <option value style="text-align: center;">==Pilih Fakultas==</option>
+                            <option value="1">Fakultas Ilmu Sosial dan Politik</option>
+                            <option value="2">Fakultas Ekonomi dan Bisnis</option>
+                            <option value="3">Fakultas Ilmu Budaya</option>
+                            <option value="4">Fakultas Matematika dan Ilmu Pengetahuan Alam</option>
+                            <option value="5">Fakultas Pertanian</option>
+                            <option value="6">Fakultas Keguruan dan Ilmu Pendidikan</option>
+                            <option value="7">Fakultas Kedokteran</option>
+                            <option value="8">Fakultas Teknik</option>
+                            <option value="9">Fakultas Hukum</option>
+                            <option value="10">Fakultas Seni Rupa dan Desain</option>
+                            <option value="11">Fakultas Keolahragaan</option>
+                            <option value="12">Pascasarjana</option>
+                            <option value="13">Dosen / Karyawan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Prodi
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <input type="text" name="prodi" placeholder="Prodi" required="requred"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Alamat Rumah
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <textarea name="alamat_rumah" placeholder="Alamat Rumah" rows="3" required="required"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Alamat Kost
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <textarea name="alamat_kost" placeholder="Alamat Kost" rows="3" required="required"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nomor Handphone
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td> +62 <input type="text" name="no_telp" placeholder="Nomor Handphone" required="required"> </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tempat & Tanggal Lahir
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <input type="text" name="tempat" placeholder="Tempat Lahir" required="required">
+                        <input type="date" name="date" placeholder="Tanggal Lahir" required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nama Ibu
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <input type="text" name="name_parents" placeholder="Nama Ibu" required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <input type="email" class="email" placeholder="Email address" required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <input type="password" class="password" placeholder="Password" required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Konfirmasi Password
+                        <font color="red">
+                            <sup>*</sup>
+                        </font>
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <input type="password" class="confirmPassword" placeholder="Confirm New Password" required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button class="button" type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <script>
+            document.querySelector('.button').onclick = function(){
+
+                var password = document.querySelector('.password').value,
+                confirmPassword = document.querySelector('.confirmPassword').value;
+
+                if(password == ""){
+                    alert("Field cannot be empty.");
+                }
+                else if(confirmPassword == ""){
+                    alert("Field cannot be empty.")
+                }
+                else if(password != confirmPassword){
+                    alert("Password didn't match, please try again.");
+                    return false
+                }
+                else if(password == confirmPassword){
+                }
+                return true
+            }
+        </script>    
+    </body>
+</html>

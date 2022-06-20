@@ -1,0 +1,331 @@
+@import url('http://fonts.cdnfonts.com/css/swiss-721-3');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');           
+
+#wrap{
+    width: 1000px;
+    height: 800px;
+    margin: 20px auto;
+}
+
+#header{
+    background-image: url(image/header.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    border: 0px;
+    position: relative;
+    border-top-right-radius: 50px;
+    width: 730px;
+    height: 300px;
+    margin: auto;
+    float: right;
+}
+
+#judul{
+    font-size: 50px;
+    text-align: right;
+    padding: 200px 40px 0 0;
+}
+
+#judul a{
+    color: white;
+    text-decoration: none;
+}
+
+#judul a:hover{
+    color: grey;
+}
+
+.desc{
+    font-size: 30px;
+    color: white;
+    text-align: right;
+    padding: 0 40px 0 0;
+}
+#menu ul{
+    float: right;
+    background: #202021;
+    border-bottom: 3px solid #6c3;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 0px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    list-style: none;
+    width: 730px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 1;
+}
+
+#menu ul:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#menu ul li{
+    float: left;
+}
+
+#menu ul li:hover{
+    color: rgb(102, 204, 51);
+}
+
+#menu ul li a{
+    display: block;
+    color: white;
+    padding: 10px 23px;
+    text-decoration: none;
+    
+}
+
+#menu ul li:hover a{
+    color: rgb(102, 204, 51);
+}
+
+#menu ul li:hover > ul {
+    display: block;
+}
+
+#menu ul ul{
+    background: #202021;
+    position: absolute;
+    padding: 0;
+    top: 100%;
+    display: none;
+    width: auto;
+}
+
+#menu ul ul li{
+    float: none;
+    position: relative;
+}
+
+#menu ul ul li a{
+    padding: 10px auto;
+    color: white !important;
+}
+
+#menu ul ul li a:hover {
+    color: rgb(102, 204, 51) !important;
+}
+
+#menu ul ul ul{
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+#kiri{
+    border-top-left-radius: 50px;
+    background-color: #f1f1f1;
+    width: 250px;
+    height: auto;
+    margin: 0 0 30px;
+    float: left;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+
+}
+
+#kiri h2{
+    margin: 0px 0 0px 0;
+    padding: 5px 12px;
+    color: white;
+    font-size: 20px;
+    background: #202021;
+    border-bottom: 3PX solid #6c3;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#kiri ul{
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 5px 0 5px 0px;
+    list-style-type: none;
+    width: 200px;
+}
+
+#kiri ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #202021;
+    padding: 10px 30px;
+    height: 30px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: .3s ease;
+    list-style-type: none;
+}
+
+#kiri ul li a:hover{
+    color: #6c3;
+}
+
+#kiri ul ul{
+    background: #f1f1f1;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    display: none;
+    height: auto;
+    width: 250px;
+    left: 170px;
+    z-index: 9;
+}
+
+#kiri ul span{
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;
+}
+
+#kiri ul #dropdown{
+    position: relative;
+}
+
+#kiri ul #dropdown:hover > ul{
+    display: block;
+}
+
+#kiri ul #droptwo ul{
+    position: absolute;
+    left: 220px;
+    top: 0;
+}
+
+#kiri ul #droptwo:hover ul{
+    display:flow-root;
+}
+
+#konten{
+    background-color: #f1f1f1;
+    width: 690px;
+    height: auto;
+    margin: 0 0 20px;
+    padding: 20px 20px 40px 20px;
+    float: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}
+
+.posttitle{
+    background-color: #202021;
+    border-bottom: 3px #6c3;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.posttitle a{
+    text-decoration: none;
+}
+
+.post{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 200px 200px;
+    grid-gap: 25px;
+}
+
+.image-item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.image-item .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-item .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition:.3s ease-out;
+}
+
+.image-item:hover .image img{
+    transform: scale(1.10);
+}
+
+.text{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    line-height: 12.5px;
+    margin: 0;
+}
+
+.greenspacer{
+    height: 2.5px;
+    width: 30px;
+    background: #6c3;
+    margin: 10px auto;
+}
+
+.features{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Swiss 721', sans-serif ;
+}
+
+.hasborder{
+    overflow: hidden;
+}
+
+.hasborder > strong{
+    float: left;
+}
+
+.hasborder:after{
+    content: "";
+  display: block;
+  border-bottom: 3px solid #6c3;
+  overflow: hidden;
+  height: 1em;
+}
+
+#logo{
+    width: 200px;
+    height: 200px;
+}
+
+#footer{
+    background-color: #202021;
+    padding: 20px 0 20px 0;
+    width: 1000px;
+    height: 45px;
+    clear: both;
+    margin: 20px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    position: relative;;
+    color: white;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.video-container{
+    position: relative;
+    z-index: 0;
+    top: 0px;
+}
+
+.video-container iframe{
+    border-radius: 5px;
+    width: 100%; 
+    height: 45vh;
+}

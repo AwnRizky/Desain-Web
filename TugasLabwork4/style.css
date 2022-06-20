@@ -1,0 +1,61 @@
+.banner{
+    margin: 10px 15px;
+    padding: 5px 0;
+    background: cyan;
+    border-radius: 15px;
+}
+h1{
+    color: blue;
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 2px 2px #555;
+}
+.leftbar{
+    margin: 10px 15px;
+    padding: 10px;
+    background: #ecfa91;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 12px;
+    border-radius: 15px;
+}
+.barlist{
+    margin: 10px;
+    padding: 0 10px;
+    background: #90e07e;
+    grid-column: 1 / span 3;
+}
+.barlist ul{
+    list-style: none;
+    padding: 10px;
+}
+.barlist ul li{
+    padding: 10px;
+    margin: 10px 0;
+    background: green;
+}
+.text {
+    margin: 10px;
+    padding: 10px;
+    background: #90e07e;
+    grid-column: 4 / span 9;
+}
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+p{
+    color: #0b872c;
+}
+.bottombar{
+    margin: 10px 15px;
+    padding: 5px 0;
+    background: #e3b059;
+    border-radius: 15px;
+}
+h3{
+    color: #b03f25;
+    text-align: center;
+    font-family: monospace;
+}

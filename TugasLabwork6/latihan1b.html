@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menggunakan Media Query CSS3</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        
+        <style>
+            .smartphone{
+                display: none;
+            }
+
+            .foto{
+                display: none;
+            }
+
+            @media only screen and (max-width: 428px){
+                body{
+                    background-color: yellow;
+                }
+
+                .smartphone{
+                    display: block;
+                }
+            }
+
+            @media only screen and (min-width: 1024px){
+                body{
+                    background-color: yellow;
+                }
+
+                .smartphone{
+                    display: block;
+                }
+                
+                .foto{
+                    display: block;
+                }
+                
+                img{
+                    height: 20%;
+                    width: 20%;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <h3>Menggunakan Media Query CSS 3</h3>
+        <div class="smartphone">
+            <h2>Terdeteksi ukuran smartphone</h2>
+        </div>
+        <div class="foto">
+            <img src="https://uns.ac.id/en/wp-content/uploads/2021/04/Logo-UNS-New-04-1.png">
+        </div>
+    </body>
+</html>
